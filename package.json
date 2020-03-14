@@ -1,0 +1,15 @@
+{
+  "name": "Valero_L_ChatApp",
+  "version": "1.0.0",
+  "description": "social media app ",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "LV",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0"
+  }
+}

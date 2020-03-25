@@ -2,7 +2,7 @@
 
 <img src="/public/images/meowchat.svg" alt="Meow Chat" width="200">
 
-## Meow meow meow
+## Meow Meow Meow
 
 Meow Chat provides users to talk with cat friends and chat to new cats and friends across the world.
 

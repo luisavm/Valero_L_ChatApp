@@ -1,4 +1,4 @@
-# Ontario Summer
+# Meow Chat
 
 <img src="/public/images/meowchat.svg" alt="Meow Chat" width="200">
 

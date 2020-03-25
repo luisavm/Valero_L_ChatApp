@@ -11,8 +11,8 @@ Meow Chat provides users to chat to new cats and friends across the world.
 * **SASS/CSS3**
 * **JavaScript**
 * **Vue.js**
-**Node.js**
-**Gulp**
+* **Node.js**
+* **Gulp**
 
 
 ## Packages to Install (Developers)

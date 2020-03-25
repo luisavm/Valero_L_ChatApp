@@ -10,8 +10,7 @@ Meow Chat provides users to talk with cat friends and chat to new cats and frien
 * **HTML5**
 * **SASS/CSS3**
 * **JavaScript**
-* **PHP**
-**Vue.js**
+* **Vue.js**
 **Node.js**
 **Gulp**
 

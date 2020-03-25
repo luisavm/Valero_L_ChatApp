@@ -28,4 +28,4 @@ To install: `npm install`
 * Adobe Illustrator
 
 ## Developer and designer 
-* **Luisa Valero** - https://github.com/luisavm
+[Luisa Valero]( https://github.com/luisavm)

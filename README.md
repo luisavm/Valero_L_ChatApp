@@ -4,7 +4,7 @@
 
 ## Meow Meow Meow
 
-Meow Chat provides users to talk with cat friends and chat to new cats and friends across the world.
+Meow Chat provides users to chat to new cats and friends across the world.
 
 ## Built with
 * **HTML5**

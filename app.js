@@ -34,12 +34,22 @@ io.on('connection', function(socket) {
     // listen for incoming message from a user (socket referes to an individual user)
     // msg = incoming msg from that user
     socket.on('chat_message', function(msg) {
-        console.log(msg);
+        console.log('Your owner is typing');
         // when we get msg, send it to everyone
         // io checks who is connected
         // gets the messages
 
-        io.emit('new_message', { id: socket.id, message: msg });
+        io.emit('one_typing', { message: msg });
+    })
+
+    // listen for a disconnect event - like hanging up a phone
+    socket.on('no_typing', function(msg) {
+        console.log('no one is typing');
+        // when we get msg, send it to everyone
+        // io checks who is connected
+        // gets the messages
+
+        io.emit('none_typing', { message: msg });
     })
 
     // listen for a disconnect event - like hanging up a phone

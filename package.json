@@ -1,7 +1,7 @@
 {
   "name": "Valero_L_ChatApp",
   "version": "1.0.0",
-  "description": "social media app ",
+  "description": "chat app ",
   "main": "app.js",
   "scripts": {
     "start": "node app"

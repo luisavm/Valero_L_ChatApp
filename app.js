@@ -4,7 +4,7 @@ var app = express();
 // import socket.io library
 const io = require('socket.io')(); // instantiate the library right away with the () method -> makes it run
 
-const port = process.env.PORT || 3030;
+const port = process.env.PORT || 3001;
 
 // tell express where our static files are (js, images, css etc)
 app.use(express.static('public'));
@@ -34,7 +34,17 @@ io.on('connection', function(socket) {
     // listen for incoming message from a user (socket referes to an individual user)
     // msg = incoming msg from that user
     socket.on('chat_message', function(msg) {
-        console.log('Your owner is typing');
+        console.log(msg);
+        // when we get msg, send it to everyone
+        // io checks who is connected
+        // gets the messages
+
+        io.emit('new_message', { id: socket.id, message: msg });
+    })
+
+    // listen for a disconnect event - like hanging up a phone
+    socket.on('typing', function(msg) {
+        console.log('Your owner cat is typing');
         // when we get msg, send it to everyone
         // io checks who is connected
         // gets the messages
@@ -42,7 +52,6 @@ io.on('connection', function(socket) {
         io.emit('one_typing', { message: msg });
     })
 
-    // listen for a disconnect event - like hanging up a phone
     socket.on('no_typing', function(msg) {
         console.log('no one is typing');
         // when we get msg, send it to everyone

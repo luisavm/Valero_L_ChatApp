@@ -6,23 +6,26 @@
 	<title>Meow Chat</title>
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
 	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="styleshee">
 	<script src="https://unpkg.com/vue"></script>
 </head>
 
 <body>
 	<main id="app">
+		<div id="form-wrapper">
 		<section class="form-container">
-			<img src="./images/meowchat.svg" alt="meow chat logo">
-			<label for="nickname">What is your cat's name</label>
-			<input v-model="nickName" type="text" id="nickname" class="nickname" placeholder="ex. Eva">
+			<img id="logo" src="./images/meowchat.svg" alt="meow chat logo">
+			<label for="nickname">What is your cat's name?</label>
+			<input v-model="nickName" type="text" id="nickname" class="nickname">
 
 			<form>
 				<label for="message">Share your cat's story</label>
-				<textarea v-on:keyup="typingSomething" v-model="message" class="message" type="text" autocomplete="off" id="textarea" placeholder="Eva is very friendly and playful... or something like that!"></textarea>
+				<textarea v-on:keyup="typingSomething" v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
 				<input @click.prevent="dispatchMessage" type="submit">
-				<img src="./images/cat_hand.svg" alt="cat hand with heart">
+				<img id="catHand" v-bind:class="{showHand:isShow}" src="./images/cat_hand.svg" alt="cat hand with heart">
 			</form>
 		</section>
+	</div>
 
 		<section class="messages" id="msgHolder">
 			<ul id="messages">

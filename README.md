@@ -3,7 +3,7 @@
 
 # Meow Chat
 
-Meow Chat provides users to chat to new cats and friends across the world. See live [meow chat](https://chatmeow.herokuapp.com/).
+Meow Chat provides users to chat to new cats and friends across the world. See live [Meow Chat](https://chatmeow.herokuapp.com/).
 
 ## Built with
 * **HTML5**

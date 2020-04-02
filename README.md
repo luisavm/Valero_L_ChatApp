@@ -14,12 +14,13 @@ Meow Chat provides users to chat to new cats and friends across the world. See l
 * **Express**
 
 
-## Packages to Install (Developers)
+## Programs to Install
 
 If you run the `cat package.json` command, you'll see that you need these packages to run the program:
 
 * NPM
 * Node JS
+* Express
 
 To install: `npm install`
 
